@@ -33,9 +33,10 @@ assert(solution(5, 8, [5, 1, 2, 4, 3])) == 7
 assert(solution(100, 1000, [1, 1, 1, 1])) == 0
 assert(solution(9, 13, [2, 5, 5, 1, 1])) == 1
  
- 
-input_ = [list(map(int, line.strip().split())) for line in sys.stdin]
+"""
+input_ = [tuple(map(int, line.strip().split())) for line in sys.stdin]
 for j in range(1, len(input_), 2):
     _, l, r = input_[j]
     items = input_[j+1]
     print(solution(l, r, items))
+"""
